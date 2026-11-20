@@ -128,3 +128,14 @@ export const key: [string, string, string][] = [
   ["CS needed", "HEAVY", "Full software engineering, large or low-latency systems"],
   ["Scope", "US and Europe", "Firms listed are examples of employers, not an exhaustive list"],
 ];
+
+// Added in this planner (not in the original sheet): banking, private equity and undergraduate consulting entry roles.
+export const addedRoles: [string, string, string, string, string, string, string?][] = [
+  ["Investment banking", "M&A and capital markets advisory", "Investment banking analyst", "B.S./B.A.", "LIGHT", "Goldman Sachs, Morgan Stanley, JPMorgan, Evercore, Lazard, Centerview, PJT, Moelis", "Junior-summer internship recruited in sophomore year"],
+  ["Investment banking", "Sales & trading at banks", "Sales and trading analyst", "B.S./B.A.", "LIGHT–SOLID", "Goldman Sachs, Morgan Stanley, JPMorgan, Citi, BofA, Barclays"],
+  ["Investment banking", "Restructuring", "Restructuring analyst", "B.S./B.A.", "LIGHT", "PJT, Houlihan Lokey, Lazard, Evercore, Moelis"],
+  ["Private equity", "Buyout funds", "Private equity associate", "B.S./B.A. (after ~2 years in banking); MBA common later", "LIGHT", "Blackstone, KKR, Apollo, Carlyle, Warburg Pincus", "On-cycle recruiting starts months after joining a bank"],
+  ["Private equity", "Growth equity", "Growth equity associate", "B.S./B.A.", "LIGHT", "General Atlantic, Summit Partners, TA Associates, Insight Partners"],
+  ["Private equity", "Infrastructure and real assets", "Infrastructure / real-asset investor", "B.S./B.A.; MBA common later", "LIGHT", "Brookfield, Macquarie Asset Management, GIP, Stonepeak"],
+  ["Management consulting", "Strategy firms", "Business analyst / associate consultant (undergraduate hire)", "B.S./B.A.", "LIGHT", "McKinsey, BCG, Bain, Oliver Wyman, Kearney, L.E.K.", "Sophomore programs are the entry point"],
+];

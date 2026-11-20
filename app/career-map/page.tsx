@@ -1,5 +1,5 @@
 import DiscreteNote from "@/components/DiscreteNote";
-import { allRoles, csCourses, csNotes, shortlist, physicsEngineering, key, CAREER_MAP_URL } from "@/data/careerMap";
+import { addedRoles, allRoles, csCourses, csNotes, shortlist, physicsEngineering, key, CAREER_MAP_URL } from "@/data/careerMap";
 
 const TABS = [
   ["all-roles", "All roles"],
@@ -17,7 +17,7 @@ export default function CareerMapPage() {
   return (
     <>
       <h1>Career map</h1>
-      <p className="lead">The full Career_Map_Applied_Math sheet, all five tabs. {allRoles.length} roles across {fields.length} fields. <a href={CAREER_MAP_URL} target="_blank" rel="noreferrer">Open the original sheet</a>.</p>
+      <p className="lead">The full Career_Map_Applied_Math sheet, all five tabs. {allRoles.length} roles across {fields.length} fields. <a href={CAREER_MAP_URL} target="_blank" rel="noreferrer">Open the original sheet</a>. Banking, private equity and undergraduate consulting roles are added below the sheet's roles; each also has its own <a href="/lanes">career lane</a>.</p>
       <div className="toolbar">{TABS.map(([id, label]) => <a key={id} className="btn" href={`#${id}`}>{label}</a>)}</div>
 
       <h2 id="all-roles">All roles</h2>
@@ -36,6 +36,13 @@ export default function CareerMapPage() {
             );
           })}
         </tbody>
+      </table>
+
+      <h3>Added in this planner: banking, private equity and undergraduate consulting</h3>
+      <p className="small muted">Not in the original sheet. Firms are examples only — many more exist.</p>
+      <table>
+        <thead><tr><th>Field</th><th>Area</th><th>Role</th><th>Degree</th><th>CS needed</th><th>Firms</th><th>Notes</th></tr></thead>
+        <tbody>{addedRoles.map((r, i) => <tr key={i}><td>{r[0]}</td><td>{r[1]}</td><td><strong>{r[2]}</strong></td><td>{r[3]}</td><td>{tier(r[4])}</td><td className="small">{r[5]}</td><td className="small muted">{r[6] ?? ""}</td></tr>)}</tbody>
       </table>
 
       <h2 id="cs-courses">CS courses</h2>

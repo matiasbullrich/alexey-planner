@@ -18,6 +18,7 @@ export default function PlansPage() {
       </table>
 
       <h2>Which plans reach which goals</h2>
+      <p className="small muted">Consulting, investment banking and private equity take any major, so every plan rates Full for them: what decides those paths is GPA, recruiting timing (sophomore year) and preparation outside class — see the <a href="/lanes">Career lanes</a>.</p>
       <table>
         <thead><tr><th>Plan</th>{goals.map((g) => <th key={g.id}>{g.name.split(" (")[0]}</th>)}</tr></thead>
         <tbody>

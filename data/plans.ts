@@ -53,7 +53,7 @@ export const programs: Program[] = [
   },
 ];
 
-export type GoalId = "scoft" | "qphys" | "qcomp" | "qr" | "qt" | "comb" | "ai";
+export type GoalId = "scoft" | "qphys" | "qcomp" | "qr" | "qt" | "comb" | "ai" | "consult" | "ib" | "pe";
 
 export const goals: { id: GoalId; name: string; courses: string[]; degree: string; cs: string }[] = [
   { id: "scoft", name: "SCOFT (stochastic calculus, Itô, fat tails)", courses: ["640:477", "640:478", "640:411", "640:412", "640:501", "640:502", "640:575"], degree: "PhD for pricing quant", cs: "Solid" },
@@ -63,6 +63,9 @@ export const goals: { id: GoalId; name: string; courses: string[]; degree: strin
   { id: "qt", name: "Quant trader", courses: ["640:477", "640:481", "640:350H"], degree: "MS/PhD; strong B.S. at market makers", cs: "Solid" },
   { id: "comb", name: "Combinatorics", courses: ["640:454", "640:428", "640:351", "640:403", "640:477", "642:581"], degree: "PhD for research", cs: "Light–solid" },
   { id: "ai", name: "AI and ML theory", courses: ["640:350H", "640:477", "640:478", "640:354", "640:373", "198:461"], degree: "PhD", cs: "Solid–heavy" },
+  { id: "consult", name: "Consulting", courses: ["220:102", "220:103", "640:477", "640:354"], degree: "B.S. or B.A.; MBA later", cs: "Light" },
+  { id: "ib", name: "Investment banking", courses: ["220:102", "220:103", "640:485", "640:477"], degree: "B.S. or B.A.", cs: "Light" },
+  { id: "pe", name: "Private equity", courses: ["220:102", "220:103", "640:485", "640:477"], degree: "B.S. or B.A.; usually after 2 years in banking", cs: "Light" },
 ];
 
 export type Coverage = "Full" | "Partial" | "Weak";
@@ -78,9 +81,11 @@ export type Plan = {
   flag?: string;
 };
 
-const cov = (s: string): Record<GoalId, Coverage> => {
+const cov = (s0: string): Record<GoalId, Coverage> => {
+  let s = s0;
   const m: Record<string, Coverage> = { F: "Full", P: "Partial", W: "Weak" };
-  const ids: GoalId[] = ["scoft", "qphys", "qcomp", "qr", "qt", "comb", "ai"];
+  const ids: GoalId[] = ["scoft", "qphys", "qcomp", "qr", "qt", "comb", "ai", "consult", "ib", "pe"];
+  s = s.length === 7 ? s + "FFF" : s; // any major works for consulting, banking and private equity
   return Object.fromEntries(ids.map((id, i) => [id, m[s[i]]])) as Record<GoalId, Coverage>;
 };
 
