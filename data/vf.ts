@@ -65,6 +65,7 @@ Tab|Yrs|Emphasis — best if — tradeoff
 5Y Dbl Major+MSMF|5Y|MAX CREDENTIAL. Both BS degrees + a Mathematical Finance master's (MSMF) in Year 5. Best if quant finance is the destination and 5th-year funding exists. Uses the honors 271-273 physics sequence (the one that clashes with 311H).
 5Y Math+Phys NoSPN vC|5Y|'HAVE IT ALL' WITHOUT THE SPN. Full Math BS + Physics BS + complete SCOFT over 5 years, standard physics intro, analysis kept contiguous; inline 381 alternative. Best if Lath denies the 227/228 SPN. Trade: 5 years; sophomore physics is review.
 5Y MathPhys DynSys vE|5Y|MATHEMATICAL PHYSICS + DEEP DIFFERENTIAL EQUATIONS / DYNAMICAL SYSTEMS — his stated interest ('small variations → huge changes' = bifurcations, chaos). Yr5 capstone 515+517; AI-via-math parallel column. Best if the theory+DE lean is real. Trade: math-dense early terms.
+5Y ASE Eng Physics + Math|5Y|NEW IN vG. APPLIED MATH + ENGINEERING PHYSICS (the Prosperetti shape): B.S. Applied Sciences in Engineering + B.S. Math via the SAS/Engineering dual degree. Best for turbine metallurgy, hardware founder, applied physics. Trade: needs a School-to-School transfer; chemistry and engineering mechanics added.
 MATH-PRIMARY  —  4-year
 Tab|Yrs|Emphasis — best if — tradeoff
 4Y Math+PhysMinor|4Y|CLEANEST 4-YEAR QUANT / SCOFT. Math honors through grad courses; physics as a minor (no lab overhead). Fastest route to Karatzas & Shreve. Trade: physics is a minor; sophomore is the crunch (~52 hrs).
@@ -1213,5 +1214,136 @@ Theoretical Physics PhD|✓|Strong math; limited physics courses
 
 NOTES
 Clean swap: SCOFT tail (478,575,621) out → quantum courses in (417,441,CS344,CS452,421 PDE). 381 Classical Mechanics added: Hamiltonian/Lagrangian formalism is literally what gets "quantized" — canonical quantization assumes this language. 421 PDE added: the Schrödinger equation IS a PDE; mathematical physics requires this. 563 Bayesian recovered: useful for quantum error correction statistical methods and quantum ML. 354 Linear Optimization added: directly relevant to QAOA and quantum optimization algorithms. Senior year: swap 406 Solid State for more CS if theory-focused. Honors thesis on quantum topic with Rutgers quantum researcher is highest-value PhD admissions activity. Physics minor satisfied by: 271,272,273,381,361,417,406 = well above minimum.`,
+  },
+{
+    name: "5Y ASE Eng Physics + Math",
+    text: `5-Year Dual Degree: B.S. Applied Sciences in Engineering (Engineering Physics) + B.S. Mathematics (SAS)  [new in vG]
+Applied math + engineering physics: the Prosperetti shape (a mathematician-physicist inside an engineering school). Two diplomas from the SAS/School of Engineering five-year dual-degree program. Freshman year is Alexey's ACTUAL 2026-27 schedule. He stays in SAS + Honors College and applies for the School-to-School transfer into Engineering during sophomore year (not guaranteed; records reviewed). Strongest for turbine metallurgy, hardware/deep-tech founder, applied physics, and applied math PhD; keeps quant open.
+
+FRESHMAN (actual 2026-27)
+Fall
+Course|Credits|Hrs/Wk|Notes
+640:311H — Honors Analysis I|4|15|Analysis spine
+640:252 — Differential Equations|3|4|Counts for the engineering 244 requirement
+640:454 — Combinatorics|3|8|Math elective
+750:123 — Analytical Physics Ia|2|4|Same intro physics engineers take
+198:111 — Intro to Computer Science|4|6|Minimum CS 1 of 3
+SAS Core|3|5|
+Total|19|~42|
+
+Spring
+Course|Credits|Hrs/Wk|Notes
+640:477 — Probability|3|10|Also unlocks 198:344
+640:421 — Advanced Calculus for Engineering|3|9|Fourier/PDE — the engineering-math course
+750:124 — Analytical Physics Ib|2|4|
+198:112 — Data Structures|4|10|Minimum CS 2 of 3
+640:350H — Honors Linear Algebra (or 403)|3|10|Math major
+English / writing|3|6|SAS: WC
+Total|18|~49|
+
+SOPHOMORE  (apply for School-to-School transfer into Engineering this year)
+Fall
+Course|Credits|Hrs/Wk|Notes
+640:411 — Analysis I (Rudin)|3|18|Analysis spine
+750:227 — Analytical Physics IIA|3|8|ASE requirement
+750:229 — Analytical Physics II Lab|1|3|ASE requirement
+160:159 — General Chemistry for Engineers|3|6|Engineering first-year requirement he lacks
+160:171 — Introduction to Experimentation|1|3|Engineering first-year lab
+440:221 — Engineering Mechanics: Statics (or 440:291 Honors)|3|7|Engineering elective 1
+Total|14|~45|
+
+Spring
+Course|Credits|Hrs/Wk|Notes
+640:412 — Analysis II (Rudin)|3|18|Analysis spine
+750:228 — Analytical Physics IIB|3|8|ASE requirement
+750:230 — Analytical Physics II Lab|1|3|ASE requirement
+160:160 — General Chemistry for Engineers II|3|6|Engineering first-year requirement
+440:222 — Engineering Mechanics: Dynamics (or 440:292 Honors)|3|7|Engineering elective 2
+220:102 — Intro to Microeconomics|3|5|ASE requirement; SAS: SCL
+Total|16|~47|
+
+JUNIOR  (now in the School of Engineering; ASE adviser approves the plan)
+Fall
+Course|Credits|Hrs/Wk|Notes
+750:381 — Classical Mechanics I|3|10|Engineering-physics core
+750:385 — Electromagnetism I|3|10|Engineering-physics core
+635:203 — Intro to Materials Science & Engineering|3|7|Engineering elective 3; turbine-metallurgy lane
+332:221 — Principles of Electrical Engineering I|3|7|Engineering elective 4
+IHS — Interdisciplinary Honors Seminar|3|5|Honors College requirement
+Total|15|~39|
+
+Spring
+Course|Credits|Hrs/Wk|Notes
+750:382 — Classical Mechanics II|3|10|
+750:386 — Electromagnetism II|3|10|
+750:351 — Thermal Physics|3|10|Engineering-physics option lists thermal physics
+650:291 — Mechanics of Materials|3|7|Engineering elective 5
+650:312 — Fluid Mechanics|3|8|Engineering elective 6 (Navier-Stokes)
+Total|15|~45|
+
+SENIOR
+Fall
+Course|Credits|Hrs/Wk|Notes
+750:361 — Quantum Mechanics|3|12|Option lists modern physics
+635:362 — Physical Metallurgy|3|7|Engineering elective 7; turbine alloys
+640:451 — Abstract Algebra I|3|10|Math BS requirement
+650:351 — Thermodynamics|3|7|Engineering elective 8 (turbines)
+198:344 — Algorithms|4|10|Minimum CS 3 of 3
+Total|16|~46|
+
+Spring
+Course|Credits|Hrs/Wk|Notes
+750:406 — Solid State Physics|3|8|Option lists solid-state physics
+635:407 — Mechanical Properties of Materials|3|7|Engineering elective 9 (creep, fatigue)
+332:222 — Principles of Electrical Engineering II|3|7|Engineering elective 10
+640:423 — Elementary PDE|3|9|Option lists PDE; also math elective
+615:201 — Intro to Linguistic Theory|3|6|Required H/SS minor (see notes)
+Total|15|~37|
+
+YEAR 5
+Fall
+Course|Credits|Hrs/Wk|Notes
+640:501 — Graduate Real Analysis I|3|15|Analysis spine
+640:478 — Stochastic Processes|3|8|Keeps quant open
+750:387 — Experimental Modern Physics|3|8|Engineering-physics lab
+Engineering-physics research / thesis I|3|8|With a faculty lab; also the Honors College thesis
+615:325 — Semantics|3|6|Linguistics minor
+Total|15|~45|
+
+Spring
+Course|Credits|Hrs/Wk|Notes
+640:502 — Graduate Real Analysis II|3|15|Analysis spine
+332:345 — Linear Systems & Signals|3|10|Engineering elective 11
+Engineering-physics research / thesis II|3|8|Honors College thesis
+615:350 — Pragmatics|3|6|Linguistics minor (common-knowledge reasoning)
+Linguistics minor course|3|6|
+Total|15|~45|
+
+DUAL-DEGREE RULES (RUTGERS CATALOG)
+Requirement|Met?|How
+School-to-School transfer into Engineering|○|Apply sophomore year; not guaranteed
+30 credits beyond the engineering B.S. alone|✓|5 years ≈ 160 credits
+ASE: 10 engineering electives (3+ credits each)|✓|11 listed: 440:221/222, 635:203/362/407, 332:221/222/345, 650:291/312/351
+ASE: 30 technical-elective credits|✓|Physics 381–406 + math electives
+ASE: 12 H/SS credits + Micro 220:102|✓|Core, English, IHS, 220:102, linguistics
+Technical SAS major → humanities/social-science minor|✓|Linguistics minor (check the course count with Linguistics)
+Engineering first-year program (chemistry, intro engineering)|○|Chem 159/160/171 in sophomore year; ask whether 198:111/112 replace 440:101/102
+Both diplomas conferred together|✓|End of year 5
+
+CAREER / GRADUATE PATHS ENABLED
+Path|Viability|Notes
+Turbine metallurgy / materials (GE, Siemens Energy, Pratt)|✓✓|635:203/362/407 + thermo + fluids + solid state
+Hardware / deep-tech founder|✓✓|Engineering degree + physics + math
+Applied physics / quantum hardware|✓✓|361 + 406 + labs + EE
+Applied Math PhD|✓✓|411/412 + 501/502 + PDE + fluids
+Quant research / trading|✓|477/478 + analysis + algorithms; add 575 for SCOFT
+Silicon Valley (engineering)|✓|Minimum CS + EE; add 198:440/461 for AI
+Pure Math PhD|○|451 only; no 452
+Theoretical Physics PhD|○|No 417 or grad physics
+
+✓✓ = well-positioned  |  ✓ = possible with some additional work  |  ○ = requires significant further study / not yet secured
+
+NOTES
+Built for the version-G site, not in the vF workbook. Applied Sciences in Engineering is NOT ABET-accredited (no PE-license track); for industry R&D, graduate school or a startup that rarely matters. The Engineering Physics option is advised by the Physics department. Catalog guidance favors starting in Engineering, so talk to the SAS dean and the School of Engineering early in sophomore year. Engineering course numbers and titles were checked against the Fall 2026 / Spring 2027 Rutgers schedule; the exact ASE plan must be approved by the ASE adviser.`,
   },
 ];

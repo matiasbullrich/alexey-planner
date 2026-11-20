@@ -17,6 +17,13 @@ const SUBJECTS = [
   { code: "198", label: "198 Computer Science" },
   { code: "220", label: "220 Economics" },
   { code: "635", label: "635 Materials Science (Engineering)" },
+  { code: "440", label: "440 Engineering (general)" },
+  { code: "650", label: "650 Mechanical & Aerospace Engineering" },
+  { code: "332", label: "332 Electrical & Computer Engineering" },
+  { code: "160", label: "160 Chemistry" },
+  { code: "730", label: "730 Philosophy" },
+  { code: "185", label: "185 Cognitive Science" },
+  { code: "615", label: "615 Linguistics" },
 ];
 
 type Meeting = { day: string; start: string; end: string; campus: string; building: string; room: string; mode: string };
@@ -34,11 +41,12 @@ export default function SchedulePage() {
     const p = new URLSearchParams(window.location.search);
     if (p.get("semester")) setSemester(p.get("semester")!);
     if (p.get("subject")) setSubject(p.get("subject")!);
+    if (p.get("q")) setQ(p.get("q")!);
   }, []);
   useEffect(() => {
     setData(null);
     fetch(`/api/subject?subject=${subject}&semester=${semester}`).then((r) => r.json()).then(setData).catch(() => setData({ error: "Rutgers schedule unavailable right now." }));
-    history.replaceState(null, "", `?semester=${semester}&subject=${subject}`);
+    history.replaceState(null, "", `?semester=${semester}&subject=${subject}${q ? `&q=${encodeURIComponent(q)}` : ""}`);
   }, [semester, subject]);
 
   const courses = useMemo(() => {

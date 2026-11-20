@@ -3,6 +3,7 @@ import AlertBanner from "@/components/AlertBanner";
 import { deadlines } from "@/data/opportunities";
 import { plans } from "@/data/plans";
 import Roadmap from "@/components/Roadmap";
+import MinimumCS from "@/components/MinimumCS";
 
 export default function Today() {
   return (
@@ -13,6 +14,8 @@ export default function Today() {
       <p className="small muted">Add these to your phone: subscribe to the <a href="/api/calendar">calendar feed</a> in Google Calendar (Other calendars → From URL).</p>
 
       <Roadmap />
+      <MinimumCS />
+      <p className="small">Curious beyond the requirements? <Link href="/explore">Explore</Link> epistemology, cognitive science, and reasoning about knowledge (the muddy children).</p>
 
       <h2>Explore</h2>
       <div className="grid">

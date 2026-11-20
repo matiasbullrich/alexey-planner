@@ -120,7 +120,7 @@ export const courses: Course[] = [
   { id: "198:205", title: "Discrete Structures I", dept: "Computer Science", level: 2, credits: 4, prereq: "198:111", notes: "Believed covered by Math 300H; confirm with CS." },
   { id: "198:206", title: "Discrete Structures II", dept: "Computer Science", level: 2, credits: 4, prereq: "198:205", notes: "Math 477 counts in its place." },
   { id: "198:211", title: "Computer Architecture", dept: "Computer Science", level: 2, credits: 4, prereq: "198:112" },
-  { id: "198:344", title: "Design and Analysis of Computer Algorithms", dept: "Computer Science", level: 3, credits: 4, prereq: { all: ["198:112", { any: ["198:205", "640:300H"] }, { any: ["198:206", "640:477"] }] } },
+  { id: "198:344", title: "Design and Analysis of Computer Algorithms", dept: "Computer Science", level: 3, credits: 4, prereq: { all: ["198:112", { any: ["198:206", "640:477"] }] }, verified: true, notes: "Rutgers accepts 198:112 + Math 477 — no discrete-structures courses needed. Part of the minimum CS." },
   { id: "198:439", title: "Introduction to Data Science", dept: "Computer Science", level: 4, credits: 4, prereq: "198:112" },
   { id: "198:461", title: "Machine Learning Principles", dept: "Computer Science", level: 4, credits: 4, prereq: { all: ["198:112", "640:250"] } },
   { id: "198:462", title: "Introduction to Deep Learning", dept: "Computer Science", level: 4, credits: 4, prereq: "198:461" },
@@ -128,7 +128,7 @@ export const courses: Course[] = [
   { id: "198:214", title: "Systems Programming", dept: "Computer Science", level: 2, credits: 4, prereq: "198:211" },
   { id: "198:323", title: "Numerical Analysis and Computing", dept: "Computer Science", level: 3, credits: 4, prereq: { all: ["198:112", CALC3] }, notes: "Check overlap with Math 373." },
   { id: "198:336", title: "Principles of Information and Data Management", dept: "Computer Science", level: 3, credits: 4, prereq: "198:112" },
-  { id: "198:440", title: "Introduction to Artificial Intelligence", dept: "Computer Science", level: 4, credits: 4, prereq: "198:344" },
+  { id: "198:440", title: "Introduction to Artificial Intelligence", dept: "Computer Science", level: 4, credits: 4, prereq: { any: ["198:205", { perm: "SPN", note: "No 198:205: ask the CS department for an SPN, citing Math 300H" }] } },
 
   // ---------- Economics ----------
   { id: "220:102", title: "Introduction to Microeconomics", dept: "Economics", level: 1, credits: 3 },

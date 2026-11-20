@@ -13,8 +13,8 @@ export default function AlternativesPage() {
   const pick = (i: number) => { setTab(i); history.replaceState(null, "", `#${encodeURIComponent(vfTabs[i].name)}`); };
   return (
     <>
-      <h1>All schedule alternatives (vF)</h1>
-      <p className="lead">The complete rutgers_schedule_alternatives_vF workbook, all {vfTabs.length} tabs, semester by semester. Course numbers link to the course map. <a href={VF_URL} target="_blank" rel="noreferrer">Open the original sheet</a>.</p>
+      <h1>All schedule alternatives (vG)</h1>
+      <p className="lead">Version G: the complete rutgers_schedule_alternatives_vF workbook (<a href={VF_URL} target="_blank" rel="noreferrer">original sheet</a>), plus the new <strong>5Y ASE Eng Physics + Math</strong> plan, semester by semester. Course numbers link to the course map.</p>
       <p className="flag">Rutgers discontinued the Mathematical Finance master's (MSMF) in January 2025; tabs that name it predate that. See <a href="/masters">4 or 5 years</a> for the current options.</p>
       <div className="toolbar" style={{ marginTop: 12 }}>
         {vfTabs.map((t, i) => (
