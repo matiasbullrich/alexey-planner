@@ -37,7 +37,7 @@ async function fetchAll(): Promise<Record<string, LiveCourse>> {
         instructors: (s.instructors ?? []).map((i: any) => i?.name).filter(Boolean),
         notes: [s.sectionNotes, s.comments?.map?.((x: any) => x?.description).join("; ")].filter(Boolean).join(" · "),
         meetings: (s.meetingTimes ?? []).map((m: any) => ({
-          day: m.meetingDay ?? "",
+          day: ({ M: "Mon", T: "Tue", W: "Wed", H: "Thu", F: "Fri", S: "Sat", U: "Sun" } as Record<string, string>)[m.meetingDay] ?? m.meetingDay ?? "",
           start: hhmm(m.startTimeMilitary),
           end: hhmm(m.endTimeMilitary),
           campus: m.campusName ?? m.campusAbbrev ?? "",
