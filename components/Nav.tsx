@@ -3,9 +3,11 @@ import Link from "next/link";
 const links = [
   ["/", "Today"],
   ["/map", "Course map"],
+  ["/schedule", "Class schedule"],
   ["/lanes", "Career lanes"],
   ["/career-map", "Career map"],
   ["/plans", "Plans & goals"],
+  ["/alternatives", "All alternatives (vF)"],
   ["/compare", "Compare"],
   ["/careers", "Internships & careers"],
   ["/masters", "4 or 5 years"],

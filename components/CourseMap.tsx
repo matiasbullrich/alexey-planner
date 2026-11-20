@@ -35,6 +35,7 @@ export default function CourseMap() {
   const [sel, setSel] = useState<string | null>(null);
   const [planId, setPlanId] = useState<string>("");
   const [laneId, setLaneId] = useState<string>("");
+  const [semester, setSemester] = useState<string>("12027");
   const [live, setLive] = useState<{ id: string; term?: string; sections?: LiveSection[]; prereqNotes?: string; error?: string } | null>(null);
 
   useEffect(() => {
@@ -83,11 +84,11 @@ export default function CourseMap() {
   useEffect(() => {
     if (!sel) return;
     setLive({ id: sel });
-    fetch(`/api/sections?course=${encodeURIComponent(sel)}`)
+    fetch(`/api/sections?course=${encodeURIComponent(sel)}&semester=${semester}`)
       .then((r) => r.json())
       .then((d) => setLive({ id: sel, ...d }))
       .catch(() => setLive({ id: sel, error: "Live sections unavailable." }));
-  }, [sel]);
+  }, [sel, semester]);
 
   const askPrompt = (c: Course) =>
     `I'm a Rutgers student planning my courses. Tell me about ${c.id} ${c.title}${c.book ? ` (usual book: ${c.book})` : ""}. ` +
@@ -211,7 +212,11 @@ export default function CourseMap() {
               {plansWith.length ? (<><h3>In these plans</h3><div className="small">{plansWith.map((p) => p.name).join(" · ")}</div></>) : null}
               {comps.length ? (<><h3>Compare</h3>{comps.map((c) => <div key={c.id} className="small"><Link href={`/compare#${c.id}`}>{c.a} vs {c.b}</Link></div>)}</>) : null}
 
-              <h3>Sections {live?.term ? `· ${live.term}` : ""}</h3>
+              <h3 style={{ display: "flex", gap: 8, alignItems: "center", justifyContent: "space-between" }}>Days, times &amp; rooms
+                <select value={semester} onChange={(e) => setSemester(e.target.value)} style={{ fontSize: 13 }}>
+                  <option value="92026">Fall 2026</option><option value="12027">Spring 2027</option><option value="72027">Summer 2027</option><option value="92027">Fall 2027</option>
+                </select>
+              </h3>
               {!live || live.id !== course.id || (!live.sections && !live.error) ? <div className="muted small">Loading…</div> :
                 live.error ? <div className="muted small">{live.error}</div> :
                 live.sections!.length === 0 ? <div className="muted small">Not offered this term.</div> :

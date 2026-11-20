@@ -42,6 +42,7 @@ export default function PlansPage() {
       </table>
 
       <h2>The plans</h2>
+      <p className="small">Full semester-by-semester schedules for every plan are on <a href="/alternatives">All alternatives (vF)</a>.</p>
       <div className="grid">
         {plans.map((p) => (
           <div key={p.id} className="card">
