@@ -48,7 +48,7 @@ export const lanes: Lane[] = [
     courses: ["640:477", "640:478", "640:481", "640:350H", "640:354", "640:373", "640:411", "640:412", "640:501", "640:502", "640:575", "960:463", "960:486", ...CS_SOLID],
     prep: ["Research experience: Aresty, REUs, a faculty project", "Real data projects in Python", "Stochastic calculus (Shreve) once 477/478 are done"],
     recruiting: "Same summer calendar as trading; PhD researchers are hired from the PhD.",
-    firmTypes: ["Quantitative hedge funds", "Multi-manager funds (pods)", "Banks" derivatives pricing and strats teams", "Asset managers and pension funds", "Insurers and reinsurers (catastrophe risk)", "Tail-hedging funds"],
+    firmTypes: ["Quantitative hedge funds", "Multi-manager funds (pods)", "Banks' derivatives pricing and strats teams", "Asset managers and pension funds", "Insurers and reinsurers (catastrophe risk)", "Tail-hedging funds"],
     firms: "Renaissance, Two Sigma, D.E. Shaw, Citadel, Millennium, Point72/Cubist, AQR; pricing desks at Goldman Sachs, JPMorgan, Morgan Stanley, BNP Paribas",
     earlierWork: "Career map shortlist: derivatives pricing quant ranked #1 (the stochastic-calculus track directly), tail and catastrophe risk #4 (Taleb's mathematics as a profession), generative AI theory #6 (diffusion models are Itô calculus).",
   },
