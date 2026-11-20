@@ -3,6 +3,7 @@ import Link from "next/link";
 const links = [
   ["/", "Today"],
   ["/map", "Course map"],
+  ["/lanes", "Career lanes"],
   ["/plans", "Plans & goals"],
   ["/compare", "Compare"],
   ["/careers", "Internships & careers"],

@@ -7,10 +7,11 @@ import { comparisons } from "@/data/opportunities";
 import { evaluate, courseState, missingCourses, mentions, Record_, Status } from "@/lib/prereq";
 import AskClaude from "./AskClaude";
 import { seedRecord } from "@/data/myplan";
+import { lanes } from "@/data/lanes";
 
 const W = 172, H = 42, COLW = 222, ROWH = 52, PADX = 16, PADY = 40;
 const LEVELS = ["100s", "200s", "300s", "400s", "Graduate"];
-const DEPT_ORDER = ["Math", "Math grad", "Statistics", "Physics", "Computer Science"];
+const DEPT_ORDER = ["Math", "Math grad", "Statistics", "Physics", "Engineering", "Computer Science", "Economics"];
 const COLORS: Record<string, string> = {
   taken: "var(--taken)", inprogress: "var(--inprog)", eligible: "var(--eligible)", permission: "var(--perm)", blocked: "var(--blocked)",
 };
@@ -33,6 +34,7 @@ export default function CourseMap() {
   const [rec, setRec] = useState<Record_>({});
   const [sel, setSel] = useState<string | null>(null);
   const [planId, setPlanId] = useState<string>("");
+  const [laneId, setLaneId] = useState<string>("");
   const [live, setLive] = useState<{ id: string; term?: string; sections?: LiveSection[]; prereqNotes?: string; error?: string } | null>(null);
 
   useEffect(() => {
@@ -42,6 +44,8 @@ export default function CourseMap() {
     } catch { setRec(seedRecord()); }
     const q = new URLSearchParams(window.location.search).get("course");
     if (q && courseById[q]) setSel(q);
+    const l = new URLSearchParams(window.location.search).get("lane");
+    if (l && lanes.some((x) => x.id === l)) setLaneId(l);
   }, []);
   const save = (next: Record_) => { setRec(next); try { localStorage.setItem("alexey-record", JSON.stringify(next)); } catch {} };
   const setStatus = (id: string, s: Status | null) => {
@@ -64,7 +68,8 @@ export default function CourseMap() {
 
   const edges = useMemo(() => courses.flatMap((c) => refs(c.prereq).filter((r) => courseById[r.id]).map((r) => ({ from: r.id, to: c.id, coreq: r.coreq }))), []);
   const plan = plans.find((p) => p.id === planId);
-  const inPlan = (id: string) => !plan || plan.courses.includes(id);
+  const lane = lanes.find((l) => l.id === laneId);
+  const inPlan = (id: string) => (!plan || plan.courses.includes(id)) && (!lane || lane.courses.includes(id));
 
   const course = sel ? courseById[sel] : null;
   const evalSel = course ? evaluate(course.prereq, rec) : null;
@@ -72,6 +77,7 @@ export default function CourseMap() {
   const unlocks = course ? courses.filter((c) => mentions(c.prereq, course.id)) : [];
   const missing = course ? missingCourses(course.prereq, rec) : [];
   const plansWith = course ? plans.filter((p) => p.courses.includes(course.id)) : [];
+  const lanesWith = course ? lanes.filter((l) => l.courses.includes(course.id)) : [];
   const comps = course ? comparisons.filter((c) => c.a === course.id || c.b === course.id) : [];
 
   useEffect(() => {
@@ -95,6 +101,11 @@ export default function CourseMap() {
         <select id="plan" value={planId} onChange={(e) => setPlanId(e.target.value)}>
           <option value="">All courses</option>
           {plans.map((p) => <option key={p.id} value={p.id}>{p.name}</option>)}
+        </select>
+        <label className="small muted" htmlFor="lane">Career lane</label>
+        <select id="lane" value={laneId} onChange={(e) => setLaneId(e.target.value)} style={lane ? { borderColor: lane.color, color: lane.color, fontWeight: 600 } : undefined}>
+          <option value="">None</option>
+          {lanes.map((l) => <option key={l.id} value={l.id}>{l.name}</option>)}
         </select>
         <button onClick={() => save(seedRecord())}>Reset to current schedule</button>
         <span className="muted small">Click a course to see whether you can take it. Changes you make stay in this browser only.</span>
@@ -134,7 +145,7 @@ export default function CourseMap() {
               const title = c.title.length > 24 ? c.title.slice(0, 23) + "…" : c.title;
               return (
                 <g key={c.id} className="node" transform={`translate(${p.x},${p.y})`} opacity={dim ? 0.25 : 1} onClick={() => setSel(c.id)}>
-                  <rect width={W} height={H} rx={8} fill="var(--panel)" stroke={COLORS[st]} strokeWidth={isSel ? 3 : 1.5} />
+                  <rect width={W} height={H} rx={8} fill={lane && lane.courses.includes(c.id) ? lane.color : "var(--panel)"} fillOpacity={lane && lane.courses.includes(c.id) ? 0.14 : 1} stroke={lane && lane.courses.includes(c.id) && !isSel ? lane.color : COLORS[st]} strokeWidth={isSel ? 3 : lane && lane.courses.includes(c.id) ? 2.2 : 1.5} />
                   <rect width={6} height={H} rx={3} fill={COLORS[st]} />
                   <text x={14} y={17} fontSize={12.5} fontWeight={700} fill="var(--ink)">{c.id}</text>
                   <text x={14} y={33} fontSize={11} fill="var(--quiet)">{title}</text>
@@ -194,6 +205,9 @@ export default function CourseMap() {
                 </>
               ) : null}
 
+              {lanesWith.length ? (<><h3>Career lanes</h3><div className="small" style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>{lanesWith.map((l) => (
+                <a key={l.id} href="#" onClick={(e) => { e.preventDefault(); setLaneId(l.id); }} className="tag" style={{ borderColor: l.color, color: l.color }}>{l.name}</a>
+              ))}</div></>) : null}
               {plansWith.length ? (<><h3>In these plans</h3><div className="small">{plansWith.map((p) => p.name).join(" · ")}</div></>) : null}
               {comps.length ? (<><h3>Compare</h3>{comps.map((c) => <div key={c.id} className="small"><Link href={`/compare#${c.id}`}>{c.a} vs {c.b}</Link></div>)}</>) : null}
 

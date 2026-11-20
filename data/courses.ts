@@ -19,7 +19,7 @@ export type Rule =
   | { perm: "SPN" | "placement" | "instructor" | "honors" | "graduate"; note?: string }
   | { note: string };
 
-export type Dept = "Math" | "Math grad" | "Statistics" | "Physics" | "Computer Science";
+export type Dept = "Math" | "Math grad" | "Statistics" | "Physics" | "Computer Science" | "Engineering" | "Economics";
 
 export type Course = {
   id: string; // "640:311H"
@@ -124,6 +124,22 @@ export const courses: Course[] = [
   { id: "198:439", title: "Introduction to Data Science", dept: "Computer Science", level: 4, credits: 4, prereq: "198:112" },
   { id: "198:461", title: "Machine Learning Principles", dept: "Computer Science", level: 4, credits: 4, prereq: { all: ["198:112", "640:250"] } },
   { id: "198:462", title: "Introduction to Deep Learning", dept: "Computer Science", level: 4, credits: 4, prereq: "198:461" },
+  { id: "198:213", title: "Software Methodology", dept: "Computer Science", level: 2, credits: 4, prereq: "198:112" },
+  { id: "198:214", title: "Systems Programming", dept: "Computer Science", level: 2, credits: 4, prereq: "198:211" },
+  { id: "198:323", title: "Numerical Analysis and Computing", dept: "Computer Science", level: 3, credits: 4, prereq: { all: ["198:112", CALC3] }, notes: "Check overlap with Math 373." },
+  { id: "198:336", title: "Principles of Information and Data Management", dept: "Computer Science", level: 3, credits: 4, prereq: "198:112" },
+  { id: "198:440", title: "Introduction to Artificial Intelligence", dept: "Computer Science", level: 4, credits: 4, prereq: "198:344" },
+
+  // ---------- Economics ----------
+  { id: "220:102", title: "Introduction to Microeconomics", dept: "Economics", level: 1, credits: 3 },
+  { id: "220:103", title: "Introduction to Macroeconomics", dept: "Economics", level: 1, credits: 3 },
+
+  // ---------- Engineering: Materials Science (School of Engineering; SAS students may need permission) ----------
+  { id: "635:203", title: "Introduction to Materials Science and Engineering", dept: "Engineering", level: 2, credits: 3, prereq: { perm: "instructor", note: "School of Engineering course" } },
+  { id: "635:205", title: "Crystal Chemistry and Structure of Materials", dept: "Engineering", level: 2, credits: 3, prereq: "635:203" },
+  { id: "635:314", title: "Strength of Materials", dept: "Engineering", level: 3, credits: 3, prereq: "635:203" },
+  { id: "635:362", title: "Physical Metallurgy", dept: "Engineering", level: 3, credits: 3, prereq: "635:203", notes: "Core course for turbine alloys (superalloys)." },
+  { id: "635:407", title: "Mechanical Properties of Materials", dept: "Engineering", level: 4, credits: 3, prereq: { all: ["750:227", "750:229"] }, notes: "Elasticity, plasticity, fracture, time-dependent deformation (creep) — the failure modes of turbine blades. Offered in alternate years." },
 ];
 
 export const courseById: Record<string, Course> = Object.fromEntries(courses.map((c) => [c.id, c]));

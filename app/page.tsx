@@ -20,6 +20,10 @@ export default function Today() {
           <strong>Course map</strong>
           <p className="muted small">Click any course: can you take it, what's missing, live sections this term.</p>
         </Link>
+        <Link href="/lanes" className="card" style={{ textDecoration: "none", color: "inherit" }}>
+          <strong>Career lanes</strong>
+          <p className="muted small">Quant trading, quant research, Silicon Valley, consulting, banking, private equity, turbine metallurgy, founding — each in its own color.</p>
+        </Link>
         <Link href="/plans" className="card" style={{ textDecoration: "none", color: "inherit" }}>
           <strong>Plans &amp; goals</strong>
           <p className="muted small">{plans.length} plans checked against SCOFT, quantum, quant trading, combinatorics and AI.</p>
