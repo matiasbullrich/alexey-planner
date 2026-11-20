@@ -18,7 +18,8 @@ export default function AlternativesPage() {
       <p className="flag">Rutgers discontinued the Mathematical Finance master's (MSMF) in January 2025; tabs that name it predate that. See <a href="/masters">4 or 5 years</a> for the current options.</p>
       <div className="toolbar" style={{ marginTop: 12 }}>
         {vfTabs.map((t, i) => (
-          <button key={t.name} onClick={() => pick(i)} className={i === tab ? "primary" : undefined}>{t.name}</button>
+          <button key={t.name} onClick={() => pick(i)} className={i === tab ? "primary" : undefined}
+            style={t.name.startsWith("5Y ASE") ? { background: "#1b5e20", color: "#fff", fontWeight: 700, borderColor: "#1b5e20", boxShadow: i === tab ? "0 0 0 3px #a5d6a7" : undefined } : undefined}>{t.name}</button>
         ))}
       </div>
       <div className="card" style={{ marginTop: 8 }}>
