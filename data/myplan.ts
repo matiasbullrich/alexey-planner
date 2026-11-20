@@ -9,8 +9,8 @@ export const baseline: string[] = ["640:151", "640:152", "640:250", "640:251", "
 export const fall2026: PlanItem[] = [
   { id: "640:311H", status: "guaranteed" },
   { id: "640:252", status: "guaranteed" },
-  { id: "640:454", status: "guaranteed", note: "Listed as 354 in the latest note; 354 also appears as a spring option, so 454 is assumed for fall. Correct here if wrong." },
-  { id: "750:123", status: "guaranteed", note: "Listed as 124 in the latest note; 124 is the spring course, so 123 is assumed for fall." },
+  { id: "640:454", status: "guaranteed" },
+  { id: "750:123", status: "guaranteed" },
   { id: "198:111", status: "guaranteed" },
   { id: "core", label: "SAS Core course", status: "guaranteed" },
 ];
