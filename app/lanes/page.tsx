@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { lanes } from "@/data/lanes";
 import { courseById } from "@/data/courses";
+import DiscreteNote from "@/components/DiscreteNote";
 
 export default function LanesPage() {
   return (
@@ -10,7 +11,8 @@ export default function LanesPage() {
       <div className="legend">
         {lanes.map((l) => <a key={l.id} href={`#${l.id}`} style={{ color: l.color, fontWeight: 600, textDecoration: "none" }}><span className="dot" style={{ background: l.color }} />{l.name}</a>)}
       </div>
-      <p className="small muted">CS tiers come from the CS courses tab of the Career_Map_Applied_Math sheet: Light = 4 courses, Solid = 9 (done by the end of year 3), Heavy = 15. Math 300H covers Discrete Structures I and Math 477 covers Discrete Structures II.</p>
+      <p className="small muted">CS tiers come from the CS courses tab of the Career_Map_Applied_Math sheet: Light = 4 courses, Solid = 9 (done by the end of year 3), Heavy = 15.</p>
+      <DiscreteNote />
       <div style={{ display: "flex", flexDirection: "column", gap: 16, marginTop: 12 }}>
         {lanes.map((l) => (
           <section key={l.id} id={l.id} className="card" style={{ borderLeft: `6px solid ${l.color}` }}>

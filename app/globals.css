@@ -60,3 +60,4 @@ button.primary, .btn.primary { background: var(--ink); color: var(--panel); bord
 .toolbar { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; margin-bottom: 8px; }
 select { font: inherit; font-size: 14px; padding: 6px 8px; border-radius: 8px; border: 1px solid var(--rule); background: var(--panel); color: var(--ink); }
 footer { max-width: 1180px; margin: 0 auto; padding: 16px 20px 40px; color: var(--quiet); font-size: 13px; }
+.mono-note { font-family: "Courier New", Courier, monospace; font-size: 14.5px; line-height: 1.55; background: color-mix(in srgb, #f2c94c 22%, var(--panel)); border: 1px solid #d4a72c; border-radius: 8px; padding: 12px 14px; margin: 12px 0; }

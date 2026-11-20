@@ -1,3 +1,4 @@
+import DiscreteNote from "@/components/DiscreteNote";
 import { allRoles, csCourses, csNotes, shortlist, physicsEngineering, key, CAREER_MAP_URL } from "@/data/careerMap";
 
 const TABS = [
@@ -37,6 +38,7 @@ export default function CareerMapPage() {
       </table>
 
       <h2 id="cs-courses">CS courses</h2>
+      <DiscreteNote />
       <table>
         <thead><tr><th>Tier</th><th>Course</th><th>Title</th><th>Why</th><th>Suggested year</th><th>Notes</th></tr></thead>
         <tbody>{csCourses.map((r) => <tr key={r[1]}><td>{tier(r[0])}</td><td>{r[1]}</td><td><strong>{r[2]}</strong></td><td>{r[3]}</td><td>{r[4]}</td><td className="small muted">{r[5] ?? ""}</td></tr>)}</tbody>
