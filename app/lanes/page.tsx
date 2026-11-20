@@ -28,7 +28,8 @@ export default function LanesPage() {
                 <tr><td><strong>Courses</strong></td><td>{l.courses.filter((c) => courseById[c]).map((c, i) => <span key={c}>{i ? " · " : ""}<Link href={`/map?lane=${l.id}&course=${encodeURIComponent(c)}`}>{c}</Link> <span className="muted small">{courseById[c].title}</span></span>)}</td></tr>
                 <tr><td><strong>Outside class</strong></td><td><ul style={{ margin: 0, paddingLeft: 18 }}>{l.prep.map((p) => <li key={p}>{p}</li>)}</ul></td></tr>
                 <tr><td><strong>When it is recruited</strong></td><td>{l.recruiting}</td></tr>
-                <tr><td><strong>Example employers</strong></td><td>{l.firms}</td></tr>
+                <tr><td><strong>Types of firms</strong></td><td>{l.firmTypes.join(" · ")}</td></tr>
+                <tr><td><strong>Example employers</strong></td><td>{l.firms}<div className="muted small">Examples only — many more firms exist in each type.</div></td></tr>
                 {l.earlierWork ? <tr><td><strong>From earlier planning</strong></td><td>{l.earlierWork}</td></tr> : null}
               </tbody>
             </table>

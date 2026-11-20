@@ -21,6 +21,7 @@ export default function CareerMapPage() {
       <div className="toolbar">{TABS.map(([id, label]) => <a key={id} className="btn" href={`#${id}`}>{label}</a>)}</div>
 
       <h2 id="all-roles">All roles</h2>
+      <p className="small muted">Firms listed are examples of employers, not an exhaustive list — many more exist in each field.</p>
       <div className="legend">{fields.map((f) => <a key={f} href={`#f-${f.replace(/\W+/g, "-")}`}>{f}</a>)}</div>
       <table>
         <thead><tr><th>Field</th><th>Area</th><th>Role</th><th>Degree</th><th>CS needed</th><th>Firms</th><th>Notes</th></tr></thead>

@@ -14,6 +14,7 @@ export type Lane = {
   courses: string[];
   prep: string[];
   recruiting: string;
+  firmTypes: string[];
   firms: string;
   earlierWork?: string;
 };
@@ -33,6 +34,7 @@ export const lanes: Lane[] = [
     courses: ["640:477", "640:481", "640:350H", "640:454", "640:354", "640:478", ...CS_SOLID],
     prep: ["Probability puzzles: “A Practical Guide to Quantitative Finance Interviews” (the Green Book), “Heard on the Street”", "Mental-math speed drills", "Betting and game-theory thinking (poker-style expected value)", "First-year and sophomore programs: Jane Street FTTP, SIG Discovery, Optiver FutureFocus, Citadel Spark"],
     recruiting: "Junior-summer internships open July–August of the year before (for Alexey: summer 2028 for summer 2029).",
+    firmTypes: ["Proprietary trading firms and market makers", "Options and ETF market makers", "Hedge-fund trading teams", "Bank trading desks (sales & trading)", "Commodity and energy trading houses", "Crypto trading firms"],
     firms: "Jane Street, SIG, Optiver, IMC, Citadel Securities, Hudson River Trading, Jump",
     earlierWork: "Career map shortlist: buy-side quant research or trading ranked #2 (highest pay ceiling), commodity and weather-driven trading #3 (close to the family's agricultural world), sports trading #5.",
   },
@@ -46,6 +48,7 @@ export const lanes: Lane[] = [
     courses: ["640:477", "640:478", "640:481", "640:350H", "640:354", "640:373", "640:411", "640:412", "640:501", "640:502", "640:575", "960:463", "960:486", ...CS_SOLID],
     prep: ["Research experience: Aresty, REUs, a faculty project", "Real data projects in Python", "Stochastic calculus (Shreve) once 477/478 are done"],
     recruiting: "Same summer calendar as trading; PhD researchers are hired from the PhD.",
+    firmTypes: ["Quantitative hedge funds", "Multi-manager funds (pods)", "Banks" derivatives pricing and strats teams", "Asset managers and pension funds", "Insurers and reinsurers (catastrophe risk)", "Tail-hedging funds"],
     firms: "Renaissance, Two Sigma, D.E. Shaw, Citadel, Millennium, Point72/Cubist, AQR; pricing desks at Goldman Sachs, JPMorgan, Morgan Stanley, BNP Paribas",
     earlierWork: "Career map shortlist: derivatives pricing quant ranked #1 (the stochastic-calculus track directly), tail and catastrophe risk #4 (Taleb's mathematics as a profession), generative AI theory #6 (diffusion models are Itô calculus).",
   },
@@ -59,6 +62,7 @@ export const lanes: Lane[] = [
     courses: [...CS_HEAVY, "640:350H", "640:477", "640:354"],
     prep: ["Algorithms interview practice", "Personal projects and open source", "One shipped product he owns end to end"],
     recruiting: "Internship applications open August–October of the year before.",
+    firmTypes: ["Large tech companies", "AI research labs", "Venture-backed startups", "Chip and hardware companies", "Fintech and trading-technology firms"],
     firms: "Google DeepMind, OpenAI, Anthropic, Meta, NVIDIA, startups",
   },
   {
@@ -71,6 +75,7 @@ export const lanes: Lane[] = [
     courses: ["220:102", "220:103", "640:477", "640:354"],
     prep: ["Case-interview practice (“Case in Point”, partner drills)", "Leadership roles in clubs or teams", "Sophomore programs: McKinsey Sophomore Summer Business Analyst, BCG Growing Future Leaders"],
     recruiting: "Moving earlier, toward banking's calendar; sophomore programs are the entry point.",
+    firmTypes: ["Strategy firms (MBB)", "Big Four advisory practices", "Specialist firms (financial services, risk)", "Economic and litigation consulting", "Analytics arms of consulting firms"],
     firms: "McKinsey, BCG, Bain, Oliver Wyman, Deloitte, EY-Parthenon",
   },
   {
@@ -83,6 +88,7 @@ export const lanes: Lane[] = [
     courses: ["220:102", "220:103", "640:485", "640:477"],
     prep: ["Accounting and valuation technicals (three statements, DCF, comparables)", "Excel modeling", "Networking from freshman year; an introductory accounting course (Business School — may need permission for SAS students)"],
     recruiting: "The junior-summer analyst internship is recruited during sophomore year, main wave December–January, about 18 months ahead.",
+    firmTypes: ["Bulge-bracket banks", "Elite boutique advisory banks", "Middle-market banks", "Regional and international banks"],
     firms: "Goldman Sachs, Morgan Stanley, JPMorgan, Evercore, Lazard, Centerview, PJT, Moelis",
   },
   {
@@ -95,6 +101,7 @@ export const lanes: Lane[] = [
     courses: ["220:102", "220:103", "640:485", "640:477"],
     prep: ["Everything in the banking lane", "Leveraged-buyout modeling", "A view on industries and companies"],
     recruiting: "Through investment banking first; direct undergraduate PE internships exist but are rare.",
+    firmTypes: ["Large buyout funds", "Middle-market funds", "Growth-equity funds", "Infrastructure and real-asset funds", "Family offices", "Venture capital (adjacent)"],
     firms: "Blackstone, KKR, Apollo, Carlyle, Warburg Pincus, General Atlantic",
   },
   {
@@ -107,6 +114,7 @@ export const lanes: Lane[] = [
     courses: ["635:203", "635:205", "635:362", "635:407", "635:314", "750:351", "640:421", "640:423", "640:373", "750:227", "750:229"],
     prep: ["Route: Materials Science & Engineering major (school-to-school transfer into Engineering) or Applied Sciences in Engineering; physics plus a materials master's also works", "Summer research in a materials lab", "Industry internships at engine makers"],
     recruiting: "Engineering internships, fall of the year before.",
+    firmTypes: ["Jet-engine makers", "Power-turbine makers", "Superalloy and casting suppliers", "Defense and aerospace contractors", "National labs and research institutes"],
     firms: "GE Aerospace, Pratt & Whitney, Rolls-Royce, Siemens Energy, Howmet, Precision Castparts, Safran",
   },
   {
@@ -119,6 +127,7 @@ export const lanes: Lane[] = [
     courses: [...CS_SOLID, "640:354", "220:102"],
     prep: ["Ship small products and own every account they run on", "Learn to sell and to raise money", "Work a few years in a lane above to find the problem worth solving"],
     recruiting: "—",
+    firmTypes: ["His own startup", "An early-stage startup as an early employee", "Startup studios and incubators", "University spin-outs"],
     firms: "—",
   },
 ];
