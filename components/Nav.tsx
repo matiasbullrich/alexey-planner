@@ -4,6 +4,7 @@ const links = [
   ["/", "Today"],
   ["/map", "Course map"],
   ["/lanes", "Career lanes"],
+  ["/career-map", "Career map"],
   ["/plans", "Plans & goals"],
   ["/compare", "Compare"],
   ["/careers", "Internships & careers"],
