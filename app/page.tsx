@@ -14,6 +14,7 @@ export default function Today() {
       <p className="small muted">Add these to your phone: subscribe to the <a href="/api/calendar">calendar feed</a> in Google Calendar (Other calendars → From URL).</p>
 
       <Roadmap />
+      <p className="flag"><strong>Security setup:</strong> keys, vault and recovery are not in place yet — see <Link href="/security">Passwords &amp; recovery</Link> for what we're missing.</p>
       <MinimumCS />
       <p className="small">Curious beyond the requirements? <Link href="/explore">Explore</Link> epistemology, cognitive science, and reasoning about knowledge (the muddy children).</p>
 

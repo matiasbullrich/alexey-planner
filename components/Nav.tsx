@@ -9,6 +9,7 @@ const links = [
   ["/plans", "Plans & goals"],
   ["/alternatives", "All alternatives (vG)"],
   ["/explore", "Explore"],
+  ["/security", "Passwords"],
   ["/compare", "Compare"],
   ["/careers", "Internships & careers"],
   ["/masters", "4 or 5 years"],
