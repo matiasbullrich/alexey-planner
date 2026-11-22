@@ -111,6 +111,59 @@ export default function ScoftPage() {
       </table>
       <p className="small">Projects 1–2 are possible this summer, right after 477 — a year before he sits in 489. None of the eight needs a measure-theory course. Understanding <em>why</em> step 4 has bias and step 7 beats 1/√N is where Level 2–3 knowledge starts to pay.</p>
 
+      <h2>Three roads into SCOFT — and where each class comes from</h2>
+      <p>The same subject can be reached from three departments. They are not rivals; the strongest education takes pieces of all three, and five years leaves room for that.</p>
+      <table>
+        <thead><tr><th style={{ width: 150 }}>Road</th><th>Classes at Rutgers</th><th>What it teaches about randomness</th><th>Style</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><strong style={{ color: "#1c7ed6" }}>Physics</strong></td>
+            <td><C id="750:351">Physics 351</C> Thermal Physics (statistical mechanics; spring of sophomore year, after <C id="750:227">227</C>) · <C id="750:381">381</C>–<C id="750:382">382</C> Classical Mechanics · <C id="750:361">361</C> Quantum Mechanics · graduate 611 Statistical Mechanics later</td>
+            <td>Random walks, diffusion, Brownian motion, the heat equation, entropy, and Monte Carlo itself — all of which were invented in physics and borrowed by finance. Black–Scholes is the heat equation in disguise.</td>
+            <td>Learn the math from the problem. Fast, intuitive, less proof. Alexey says this is the way he enjoys most.</td>
+          </tr>
+          <tr>
+            <td><strong style={{ color: "#007A33" }}>Mathematical finance</strong></td>
+            <td><C id="640:477" /> → <C id="640:485" /> → <C id="640:489" /> + <C id="640:490" /> (the certificate), with <C id="640:478" /> and <C id="640:481" /></td>
+            <td>The finance vocabulary: no-arbitrage, hedging, risk-neutral pricing, the Greeks, and simulation applied to real contracts.</td>
+            <td>Applied and computational. No measure theory required.</td>
+          </tr>
+          <tr>
+            <td><strong style={{ color: "#7048e8" }}>Pure analysis</strong></td>
+            <td><C id="640:311H">311H</C> (done this fall) → <C id="640:411" />–<C id="640:412" /> → <C id="640:501">501</C>–<C id="640:502">502</C> → graduate probability</td>
+            <td>Why the tools work and exactly when they fail: measure, integration, convergence, martingales — the Karatzas &amp; Shreve end of SCOFT.</td>
+            <td>Proof first. Slow and demanding; pays off at the research frontier.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>What Math 411 gives, concretely</h3>
+      <ul>
+        <li><strong>The honors track of the math B.S.</strong> — it is a requirement there.</li>
+        <li><strong>The entry ticket to 501–502</strong>, which is where measure theory is actually taught, and from there to the rigorous (Karatzas &amp; Shreve) level.</li>
+        <li><strong>A second, deeper dose of proof</strong> after 311H: the habit of knowing a statement is true rather than plausible.</li>
+        <li><strong>The strongest signal for a math or probability PhD.</strong></li>
+      </ul>
+      <p>What it does <em>not</em> give: option pricing, Monte Carlo, Itô calculus as practitioners use it, or anything a physicist needs for quantum mechanics or statistical mechanics. Those come from the other two roads.</p>
+
+      <h3>What only the pure road teaches</h3>
+      <p>Pure math is not "more math" — it is a different skill. The physics road teaches him to <em>use</em> mathematics; the pure road teaches him to <em>prove</em> it and to notice when a standard move is illegal. That matters most exactly where SCOFT gets interesting: with fat tails, averages converge slowly or not at all, and the usual theorems quietly stop applying. People who work on fat tails for a living usually reached the rigorous math late and on demand, pulled by a real problem — which is a perfectly good way to arrive.</p>
+
+      <h3>311H cost nothing on the physics side</h3>
+      <p className="small">Choosing 311H over the honors physics sequence (271–273) in freshman fall did not delay statistical mechanics. Physics 351 runs only in spring and needs second-year physics on either route (272 on the honors side, <C id="750:227">227</C> on his), so the earliest date is spring of sophomore year both ways. The same appears true for Quantum Mechanics (361) in junior fall. What he gave up was the honors version of the intro material, not time.</p>
+
+      <h3>How this maps to quant trading and quant research</h3>
+      <table>
+        <thead><tr><th style={{ width: 190 }}>Destination</th><th>What the work rewards</th><th>Roads that feed it</th></tr></thead>
+        <tbody>
+          <tr><td><Link href="/lanes">Quant trading</Link></td><td>Probability at speed, mental math, games and bets, judgment under uncertainty, enough code to test an idea.</td><td>477 above all; the finance road; the Monte Carlo ladder. Level 1 is enough.</td></tr>
+          <tr><td><Link href="/lanes">Quant research</Link></td><td>Statistics, modeling, simulation, careful reasoning about data; often a graduate degree.</td><td>Finance + physics roads to Level 2; 481; the pure road if aiming at research-heavy groups.</td></tr>
+          <tr><td>Pricing / derivatives quant</td><td>Itô calculus, PDE, numerical methods.</td><td>Finance road + 478 + PDE (421/423); Shreve II.</td></tr>
+          <tr><td>PhD (math, probability, physics)</td><td>Depth and proof (math) or depth and physical insight (physics).</td><td>Pure road for math; physics road for physics.</td></tr>
+        </tbody>
+      </table>
+      <p className="small">A five-year plan lets him walk a good stretch of all three roads before choosing between industry, a master's and a PhD — see <Link href="/alternatives">the five-year alternatives</Link> and <Link href="/masters">4 or 5 years</Link>.</p>
+
       <h2>What this changes in the plan</h2>
       <ul>
         <li><strong>Nothing is lost by taking 411–412</strong> if he gets the permission and still enjoys analysis: it keeps the honors B.S., the PhD option and Level 3 alive.</li>
