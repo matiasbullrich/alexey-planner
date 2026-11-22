@@ -14,12 +14,12 @@ export default function AlternativesPage() {
   return (
     <>
       <h1>All schedule alternatives (vG)</h1>
-      <p className="lead">Version G: the complete rutgers_schedule_alternatives_vF workbook (<a href={VF_URL} target="_blank" rel="noreferrer">original sheet</a>), plus the new <strong>5Y ASE Eng Physics + Math</strong> plan, semester by semester. Course numbers link to the course map.</p>
+      <p className="lead">Version G: the complete rutgers_schedule_alternatives_vF workbook (<a href={VF_URL} target="_blank" rel="noreferrer">original sheet</a>), plus two new plans, <strong>5Y ASE Eng Physics + Math</strong> and <strong>5Y Three Roads (wide)</strong>, semester by semester. Course numbers link to the course map.</p>
       <p className="flag">Rutgers discontinued the Mathematical Finance master's (MSMF) in January 2025; tabs that name it predate that. See <a href="/masters">4 or 5 years</a> for the current options.</p>
       <div className="toolbar" style={{ marginTop: 12 }}>
         {vfTabs.map((t, i) => (
           <button key={t.name} onClick={() => pick(i)} className={i === tab ? "primary" : undefined}
-            style={t.name.startsWith("5Y ASE") ? { background: "#1b5e20", color: "#fff", fontWeight: 700, borderColor: "#1b5e20", boxShadow: i === tab ? "0 0 0 3px #a5d6a7" : undefined } : undefined}>{t.name}</button>
+            style={(t.name.startsWith("5Y ASE") || t.name.startsWith("5Y Three")) ? { background: "#1b5e20", color: "#fff", fontWeight: 700, borderColor: "#1b5e20", boxShadow: i === tab ? "0 0 0 3px #a5d6a7" : undefined } : undefined}>{t.name}</button>
         ))}
       </div>
       <div className="card" style={{ marginTop: 8 }}>

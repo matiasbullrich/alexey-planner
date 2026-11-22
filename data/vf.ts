@@ -66,6 +66,7 @@ Tab|Yrs|Emphasis — best if — tradeoff
 5Y Math+Phys NoSPN vC|5Y|'HAVE IT ALL' WITHOUT THE SPN. Full Math BS + Physics BS + complete SCOFT over 5 years, standard physics intro, analysis kept contiguous; inline 381 alternative. Best if Lath denies the 227/228 SPN. Trade: 5 years; sophomore physics is review.
 5Y MathPhys DynSys vE|5Y|MATHEMATICAL PHYSICS + DEEP DIFFERENTIAL EQUATIONS / DYNAMICAL SYSTEMS — his stated interest ('small variations → huge changes' = bifurcations, chaos). Yr5 capstone 515+517; AI-via-math parallel column. Best if the theory+DE lean is real. Trade: math-dense early terms.
 5Y ASE Eng Physics + Math|5Y|NEW IN vG. APPLIED MATH + ENGINEERING PHYSICS (the Prosperetti shape): B.S. Applied Sciences in Engineering + B.S. Math via the SAS/Engineering dual degree. Best for turbine metallurgy, hardware founder, applied physics. Trade: needs a School-to-School transfer; chemistry and engineering mechanics added.
+5Y Three Roads (wide)|5Y|NEW IN vG. NO RUSH: physics (mechanics, statistical mechanics, quantum) + the Mathematical Finance certificate + the analysis ladder to measure theory, spread over five years. Main line skips E&M and labs (no physics degree); the variant column keeps them and adds the Physics B.S. Year 5 optional.
 MATH-PRIMARY  —  4-year
 Tab|Yrs|Emphasis — best if — tradeoff
 4Y Math+PhysMinor|4Y|CLEANEST 4-YEAR QUANT / SCOFT. Math honors through grad courses; physics as a minor (no lab overhead). Fastest route to Karatzas & Shreve. Trade: physics is a minor; sophomore is the crunch (~52 hrs).
@@ -1345,5 +1346,129 @@ Theoretical Physics PhD|○|No 417 or grad physics
 
 NOTES
 Built for the version-G site, not in the vF workbook. Applied Sciences in Engineering is NOT ABET-accredited (no PE-license track); for industry R&D, graduate school or a startup that rarely matters. The Engineering Physics option is advised by the Physics department. Catalog guidance favors starting in Engineering, so talk to the SAS dean and the School of Engineering early in sophomore year. Engineering course numbers and titles were checked against the Fall 2026 / Spring 2027 Rutgers schedule; the exact ASE plan must be approved by the ASE adviser.`,
+  },
+  {
+    name: "5Y Three Roads (wide)",
+    text: `5-Year Wide Plan: physics + mathematical finance + analysis, without the squeeze  [new in vG]
+The three roads into SCOFT spread over five years instead of two, so nothing interesting is sacrificed. MAIN LINE (left) = Math B.S. honors track + the heart of theoretical physics (mechanics, statistical mechanics, quantum) + the Mathematical Finance certificate, with NO physics degree: electricity & magnetism and the lab sequence are left out. RIGHT COLUMN = the variant that keeps E&M and the labs and earns the Physics B.S. as well. Sophomore year is physics-heavy (as already planned); finance moves to junior year. Year 5 is optional: every Math B.S. requirement is done by the end of year 4.
+
+FRESHMAN (actual 2026-27)
+Fall
+Course|Credits|Hrs/Wk|Notes
+640:311H — Honors Analysis I|4|15|Pure road, first dose
+640:252 — Differential Equations|3|4|
+640:454 — Combinatorics|3|8|
+750:123 — Analytical Physics Ia|2|4|
+198:111 — Intro to Computer Science|4|6|Minimum CS 1 of 3
+SAS Core|3|5|
+Total|19|~42|
+
+Spring
+Course|Credits|Hrs/Wk|Notes
+640:477 — Probability|3|10|The real prerequisite for every road
+640:421 — Advanced Calculus for Engineering|3|9|Fourier / PDE methods
+750:124 — Analytical Physics Ib|2|4|
+198:112 — Data Structures|4|10|Minimum CS 2 of 3
+640:350H — Honors Linear Algebra (or 403)|3|10|If no seat: take it sophomore fall
+English / writing|3|6|
+Total|18|~49|
+
+SOPHOMORE  —  the physics year
+Fall
+Course|Credits|Hrs/Wk|Notes»► VARIANT: KEEP E&M → ALSO EARN THE PHYSICS B.S.
+640:411 — Mathematical Analysis I (Rudin)|3|18|Pure road (by permission). If no permission: 350H / 478 here, decide 411 again next year»Same as the main line, plus:
+750:227 — Analytical Physics IIA|3|8|Unlocks Thermal Physics 351»ADD 750:229 lab (1 cr)
+750:381 — Classical Mechanics I|3|10|Lagrangian / Hamiltonian mechanics
+220:102 — Intro to Microeconomics|3|5|SAS core; useful for consulting and finance
+SAS Core|3|5|
+Total|15|~46|
+
+Spring
+Course|Credits|Hrs/Wk|Notes
+640:412 — Mathematical Analysis II|3|18|Pure road»Same as the main line, plus:
+750:228 — Analytical Physics IIB|3|8|Unlocks Quantum 361»ADD 750:230 lab (1 cr)
+750:351 — Thermal Physics (statistical mechanics)|3|10|PHYSICS ROAD INTO SCOFT: random walks, entropy, diffusion
+640:403 — Complex Variables|3|9|Spring only
+SAS Core|3|5|
+Total|15|~50|
+
+JUNIOR  —  quantum + the finance certificate
+Fall
+Course|Credits|Hrs/Wk|Notes
+640:451 — Abstract Algebra I|3|10|Honors track»REPLACE 750:464 with 750:385 Electromagnetism I (fall only)
+750:361 — Quantum Mechanics & Atomic Physics|3|12|Fall only»(464 moves to senior fall)
+640:485 — Introduction to Mathematical Finance|3|8|FINANCE ROAD starts. Fall only; no measure theory
+750:464 — Mathematical Physics|3|9|Fall only; on his target list — can move up to sophomore fall
+IHS — Interdisciplinary Honors Seminar|3|5|Honors College requirement
+Total|15|~44|
+
+Spring
+Course|Credits|Hrs/Wk|Notes
+640:452 — Abstract Algebra II|3|10|Honors track»REPLACE SAS Core with 750:386 Electromagnetism II (spring only)
+750:382 — Classical Mechanics II|3|10|Spring only»(core moves to year 5)
+640:489 — Computational Finance|3|8|THE MONTE CARLO COURSE. Spring only
+640:490 — Topics in Mathematical Finance|3|8|Research project → certificate complete
+SAS Core|3|5|
+Total|15|~41|
+
+SENIOR  —  depth, and the decision
+Fall
+Course|Credits|Hrs/Wk|Notes
+640:501 — Graduate Real Analysis I|3|15|WHERE MEASURE THEORY IS TAUGHT»REPLACE the Explore elective with 750:326 Physics Computing (4 cr, fall)
+640:478 — Stochastic Processes|3|8|Markov chains, Brownian motion»and take 750:464 here
+198:344 — Algorithms|4|10|Minimum CS 3 of 3
+640:481 — Mathematical Statistics|3|8|
+Explore elective (logic, epistemology, cognitive science)|3|6|See the Explore page
+Total|16|~47|
+
+Spring
+Course|Credits|Hrs/Wk|Notes
+640:502 — Graduate Real Analysis II|3|15|Measure and integration, continued»REPLACE the free elective with 750:327 Modern Instrumentation (spring)
+750:417 — Intermediate Quantum Mechanics|3|10|
+640:423 — Elementary PDE|3|9|Heat equation = Black–Scholes
+198:461 — Machine Learning (or 640:354 Linear Optimization)|3|8|AI / data option; 461 needs permission
+Free / Explore elective|3|6|
+Total|15|~48|
+DECISION POINT: all Math B.S. honors requirements are complete here. Graduate now, or take year 5.
+
+YEAR 5  —  optional capstone (choose by destination)
+Fall
+Course|Credits|Hrs/Wk|Notes
+Graduate probability (course number to confirm)|3|12|Karatzas & Shreve level; needs 501»ADD 750:387 Experimental Modern Physics (fall)
+16:958:587 — Advanced Simulation Methods|3|8|Statistics dept; graduate Monte Carlo»in place of 642:561
+16:642:561 — Introduction to Mathematical Physics I|3|10|Or 640:517 Graduate PDE
+Honors thesis I|3|6|Topic can sit in any of the three roads
+Free elective|3|5|
+Total|15|~41|
+
+Spring
+Course|Credits|Hrs/Wk|Notes
+750:611 — Statistical Mechanics (graduate)|3|10|By permission»ADD remaining physics elective(s); Physics B.S. complete
+16:642:564 — Statistical Mechanics II: Non-equilibrium|3|10|Stochastic processes the physics way; by permission
+Honors thesis II|3|6|
+Free elective|3|5|
+Total|12|~31|
+
+WHERE EACH ROAD SITS IN THE FIVE YEARS
+Road|Courses|Years
+Physics|123/124 → 227/228 → 381/382 → 351 → 361 → 417 → 611, 642:564|1–5
+Mathematical finance|477 → 485 → 489 + 490 (certificate) → 478, 481 → 958:587|1, 3–5
+Pure analysis|311H → 411/412 → 501/502 → graduate probability|1–2, 4–5
+Computing|198:111 → 112 → 344 (→ 461)|1, 4
+
+WHAT IT OPENS
+Path|Viability|Notes
+Quant trading|✓✓|477 + certificate + Monte Carlo by end of junior year (internship recruiting)
+Quant research|✓✓|Adds 481, 478, 501/502, simulation; year 5 makes a master's-level profile
+Consulting — advanced analytics / deep-tech groups|✓✓|Math B.S. honors + physics + statistics + a thesis; micro included
+PhD in probability / applied math|✓✓|411/412 + 451/452 + 501/502 + graduate probability + thesis
+PhD in physics|✓ (main line) / ✓✓ (E&M variant)|Physics PhD programs expect E&M; choose the right column if this becomes the goal
+Silicon Valley / AI|✓|Minimum CS + 461; add 198:440 for more
+Founder|✓✓|Breadth across three fields
+
+✓✓ = well-positioned  |  ✓ = possible with some additional work
+
+NOTES
+Built for the planner (vG), not in the vF workbook. Terms checked against the Fall 2026 / Spring 2027 Rutgers schedule: 411, 451, 361, 381, 385, 485, 464, 501 are fall; 412, 452, 351, 382, 386, 403, 489, 490, 502, 611 are spring. Leaving out E&M (385–386) and the labs is what frees the room; it also means no Physics B.S. — check with the Physics department what the main line earns as a minor. If the 411 permission does not come in sophomore fall, nothing breaks: the physics and finance roads continue, and 411 can be asked for again the next fall (501 then moves to year 5). The Honors College scholarship and aid normally cover four years — confirm what a fifth year costs before committing. Graduate courses (501/502, 611, 642, 958) need instructor or department permission.`,
   },
 ];

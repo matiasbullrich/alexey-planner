@@ -162,7 +162,7 @@ export default function ScoftPage() {
           <tr><td>PhD (math, probability, physics)</td><td>Depth and proof (math) or depth and physical insight (physics).</td><td>Pure road for math; physics road for physics.</td></tr>
         </tbody>
       </table>
-      <p className="small">A five-year plan lets him walk a good stretch of all three roads before choosing between industry, a master's and a PhD — see <Link href="/alternatives">the five-year alternatives</Link> and <Link href="/masters">4 or 5 years</Link>.</p>
+      <p className="small">A five-year plan lets him walk a good stretch of all three roads before choosing between industry, a master's and a PhD — see the semester-by-semester version in <Link href="/alternatives#5Y%20Three%20Roads%20(wide)">5Y Three Roads (wide)</Link> and <Link href="/masters">4 or 5 years</Link>.</p>
 
       <h2>What this changes in the plan</h2>
       <ul>
