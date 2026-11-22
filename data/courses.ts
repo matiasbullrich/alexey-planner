@@ -79,7 +79,9 @@ export const courses: Course[] = [
   { id: "640:477", title: "Mathematical Theory of Probability", dept: "Math", level: 4, credits: 3, prereq: CALC3, notes: "Counts in place of 960:381 for statistics routes." },
   { id: "640:478", title: "Probability II (Stochastic Processes)", dept: "Math", level: 4, credits: 3, prereq: "640:477" },
   { id: "640:481", title: "Mathematical Theory of Statistics", dept: "Math", level: 4, credits: 3, prereq: { all: ["640:477", "640:250"] } },
-  { id: "640:485", title: "Mathematical Finance", dept: "Math", level: 4, credits: 3, prereq: { all: ["640:477", CALC4, "640:250"] } },
+  { id: "640:485", title: "Introduction to Mathematical Finance", dept: "Math", level: 4, credits: 3, prereq: { all: ["640:477", CALC4, "640:250"] }, terms: ["Fall"], verified: true, notes: "No measure theory. Binomial trees, no-arbitrage, Black–Scholes. First course of the Mathematical Finance certificate." },
+  { id: "640:489", title: "Computational Finance", dept: "Math", level: 4, credits: 3, prereq: { all: ["640:485", "198:111"] }, terms: ["Spring"], verified: true, notes: "Where Monte Carlo is taught: implementing pricing models in code. Certificate course 2 of 3." },
+  { id: "640:490", title: "Topics in Mathematical Finance", dept: "Math", level: 4, credits: 3, prereq: "640:485", terms: ["Spring"], verified: true, notes: "Small-group research projects. Certificate course 3 of 3." },
 
   // ---------- Graduate math ----------
   { id: "640:501", title: "Theory of Functions of a Real Variable I", dept: "Math grad", level: 5, credits: 3, prereq: { all: [{ any: ["640:411", "640:312"] }, { perm: "graduate", note: "Undergraduates normally after 411/412; permission of instructor otherwise." }] } },
