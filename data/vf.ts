@@ -62,7 +62,7 @@ Emphasis of each tab, grouped by shape. All assume the same 'Antifragile' math l
 
 DOUBLE MAJOR / 5-YEAR  —  the 'everything' tier
 Tab|Yrs|Emphasis — best if — tradeoff
-5Y Dbl Major+MSMF|5Y|MAX CREDENTIAL. Both BS degrees + a Mathematical Finance master's (MSMF) in Year 5. Best if quant finance is the destination and 5th-year funding exists. Uses the honors 271-273 physics sequence (the one that clashes with 311H).
+5Y Dbl Major+MSMF|5Y|MAX CREDENTIAL. Both BS degrees + a Mathematical Finance master's (MSMF) in Year 5. Best if quant finance is the destination. Uses the honors 271-273 physics sequence (the one that clashes with 311H).
 5Y Math+Phys NoSPN vC|5Y|'HAVE IT ALL' WITHOUT THE SPN. Full Math BS + Physics BS + complete SCOFT over 5 years, standard physics intro, analysis kept contiguous; inline 381 alternative. Best if Lath denies the 227/228 SPN. Trade: 5 years; sophomore physics is review.
 5Y MathPhys DynSys vE|5Y|MATHEMATICAL PHYSICS + DEEP DIFFERENTIAL EQUATIONS / DYNAMICAL SYSTEMS — his stated interest ('small variations → huge changes' = bifurcations, chaos). Yr5 capstone 515+517; AI-via-math parallel column. Best if the theory+DE lean is real. Trade: math-dense early terms.
 5Y ASE Eng Physics + Math|5Y|NEW IN vG. APPLIED MATH + ENGINEERING PHYSICS (the Prosperetti shape): B.S. Applied Sciences in Engineering + B.S. Math via the SAS/Engineering dual degree. Best for turbine metallurgy, hardware founder, applied physics. Trade: needs a School-to-School transfer; chemistry and engineering mechanics added.
@@ -83,7 +83,7 @@ Tab|Yrs|Emphasis — best if — tradeoff
   {
     name: "5Y Dbl Major+MSMF",
     text: `5-Year Double Major (Math BS + Physics BS) + MSMF
-Most ambitious path. Both BS degrees plus Master of Science in Mathematical Finance in Year 5. Full SCOFT with graduate credential. Requires 5th-year funding.
+Most ambitious path. Both BS degrees plus Master of Science in Mathematical Finance in Year 5. Full SCOFT with graduate credential.
 
 ${FR_HONORS(false)}
 SOPHOMORE
@@ -194,7 +194,7 @@ Theoretical Physics PhD|✓✓|361+417+611+strong math; top-20
 ${LEGEND}
 
 NOTES
-Highest reward but highest cost (5th year tuition). Check HC aid extension. Jr Fall is peak (~53 hrs). Physics 611 requires petition. 5th year may qualify for TA funding. MSMF gives graduate credential that pure 5th-year coursework does not.`,
+Highest reward. Jr Fall is peak (~53 hrs). Physics 611 requires petition. MSMF gives graduate credential that pure 5th-year coursework does not.`,
   },
   {
     name: "5Y Math+Phys NoSPN vC",
@@ -1469,6 +1469,6 @@ Founder|✓✓|Breadth across three fields
 ✓✓ = well-positioned  |  ✓ = possible with some additional work
 
 NOTES
-Built for the planner (vG), not in the vF workbook. Terms checked against the Fall 2026 / Spring 2027 Rutgers schedule: 411, 451, 361, 381, 385, 485, 464, 501 are fall; 412, 452, 351, 382, 386, 403, 489, 490, 502, 611 are spring. Leaving out E&M (385–386) and the labs is what frees the room; it also means no Physics B.S. — check with the Physics department what the main line earns as a minor. If the 411 permission does not come in sophomore fall, nothing breaks: the physics and finance roads continue, and 411 can be asked for again the next fall (501 then moves to year 5). The Honors College scholarship and aid normally cover four years — confirm what a fifth year costs before committing. Graduate courses (501/502, 611, 642, 958) need instructor or department permission.`,
+Built for the planner (vG), not in the vF workbook. Terms checked against the Fall 2026 / Spring 2027 Rutgers schedule: 411, 451, 361, 381, 385, 485, 464, 501 are fall; 412, 452, 351, 382, 386, 403, 489, 490, 502, 611 are spring. Leaving out E&M (385–386) and the labs is what frees the room; it also means no Physics B.S. — check with the Physics department what the main line earns as a minor. If the 411 permission does not come in sophomore fall, nothing breaks: the physics and finance roads continue, and 411 can be asked for again the next fall (501 then moves to year 5). Graduate courses (501/502, 611, 642, 958) need instructor or department permission.`,
   },
 ];
