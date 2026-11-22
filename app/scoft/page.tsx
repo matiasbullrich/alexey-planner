@@ -111,6 +111,22 @@ export default function ScoftPage() {
       </table>
       <p className="small">Projects 1–2 are possible this summer, right after 477 — a year before he sits in 489. None of the eight needs a measure-theory course. Understanding <em>why</em> step 4 has bias and step 7 beats 1/√N is where Level 2–3 knowledge starts to pay.</p>
 
+      <h2>The fat-tail experiments (self-directed)</h2>
+      <p>No course teaches the fat-tails way of thinking directly: courses spend most of their time on how models work, not on how they fail. The fastest way in is to run the experiments yourself. After <C id="640:477" /> and <C id="198:111">CS 111</C>, a Python notebook (NumPy, SciPy) and a few weekends are enough:</p>
+      <table>
+        <thead><tr><th>Experiment</th><th>What he sees</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Sums of Pareto variables</strong></td><td className="small">One observation can dominate the whole sum. The average refuses to settle the way it does for normal data.</td></tr>
+          <tr><td><strong>Sample standard deviation under infinite variance</strong></td><td className="small">The "volatility" estimate jumps every time a large observation arrives and never converges — the number people quote does not exist.</td></tr>
+          <tr><td><strong>How slowly the law of large numbers works</strong></td><td className="small">Count how many observations a fat-tailed mean needs to be as reliable as 30 normal ones. The answer is often astronomically large.</td></tr>
+          <tr><td><strong>Option payoffs with jumps</strong></td><td className="small">Add rare jumps to the price process and reprice far out-of-the-money options: the tail, not the middle, carries the value.</td></tr>
+          <tr><td><strong>Estimating the tail itself</strong></td><td className="small">Fit the tail exponent on simulated data where the truth is known, and see how unstable the estimate is.</td></tr>
+        </tbody>
+      </table>
+      <p><strong>Where the experiments can count for credit.</strong> The honors work done with a professor at the end — the Honors College thesis, the physics honors research (495–496), or an independent study — can be exactly this: a supervised, written-up version of these experiments, extended to a real question. Good homes for it: a probability or mathematical-finance professor in Math, a statistical-physics group in Physics, or the financial statistics group in Statistics. <C id="640:490" /> (the project course) is an earlier, smaller chance to do the same.</p>
+      <p><strong>A master's in statistical physics is another way in.</strong> Statistical physics and complex-systems programs study exactly these objects — power laws, extreme events, random processes, simulation — without the finance vocabulary. A fifth year built around graduate Statistical Mechanics (611), non-equilibrium statistical mechanics (16:642:564) and a simulation thesis is the Rutgers version of that. Dedicated master's programs exist elsewhere, especially in Europe (for example the "Physics of Complex Systems" and "Complex Systems Modelling" programs) — worth a look in junior year; confirm what is currently offered.</p>
+      <p className="small muted">The three places that build this muscle: <C id="640:489" /> (simulation in finance), computational and statistical physics (Metropolis sampling, Ising models, percolation, random walks — <C id="750:351">Physics 351</C> and <C id="750:326">326</C>), and the self-directed notebook above. The exact models covered in 489 vary by instructor.</p>
+
       <h2>Three roads into SCOFT — and where each class comes from</h2>
       <p>The same subject can be reached from three departments. They are not rivals; the strongest education takes pieces of all three, and five years leaves room for that.</p>
       <table>

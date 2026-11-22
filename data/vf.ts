@@ -1437,7 +1437,7 @@ Course|Credits|Hrs/Wk|Notes
 Graduate probability (course number to confirm)|3|12|Karatzas & Shreve level; needs 501»ADD 750:387 Experimental Modern Physics (fall)
 16:958:587 — Advanced Simulation Methods|3|8|Statistics dept; graduate Monte Carlo»in place of 642:561
 16:642:561 — Introduction to Mathematical Physics I|3|10|Or 640:517 Graduate PDE
-Honors thesis I|3|6|Topic can sit in any of the three roads
+Honors thesis I|3|6|With a professor: e.g. the fat-tail simulation experiments (see SCOFT page), written up
 Free elective|3|5|
 Total|15|~41|
 
